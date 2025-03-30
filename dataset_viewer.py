@@ -137,4 +137,4 @@ if __name__ == "__main__":
     parser.add_argument("--labels", "-l", help="Path to label folder", required=True)
     parser.add_argument("--window_size", "-w", help="Size for programm window", nargs=2, default = [640, 420])
     args = parser.parse_args()
-    ds_viewer(srci=args.images, srcl=args.labels, window_size=tuple(map(int, args.window_size)))
+    dataset_viewer(srci=args.images, srcl=args.labels, window_size=tuple(map(int, args.window_size)))
